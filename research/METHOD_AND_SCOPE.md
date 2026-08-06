@@ -38,7 +38,7 @@ The generator uses a recursive exact-product enumeration. `verify_inverse_tree.p
 
 ### Integrity
 
-`SHA256SUMS` binds the public files, and GitHub Actions runs every verifier on pushes to `main` and on pull requests.
+`SHA256SUMS` binds the core proof, data, and verification files, and GitHub Actions runs every verifier on pushes to `main` and on pull requests.
 
 ## Scope discipline
 
