@@ -1,0 +1,32 @@
+name: Verify Erdős #409 research archive
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify SHA-256 manifest
+        run: python verify_manifest.py
+      - name: Verify complete F=71 trajectory certificate
+        run: python verify_certificate.py
+      - name: Verify all recursive prime certificates
+        run: python verify_pratt.py
+      - name: Recompute exact rooted inverse-totient tree
+        run: python verify_inverse_tree.py
+      - name: Independent factor-from-scratch trajectory
+        run: python independent_check.py
+      - name: Install SymPy
+        run: python -m pip install -r requirements.txt
+      - name: Minimal independent SymPy trajectory
+        run: python verify.py
