@@ -2,6 +2,7 @@ name: Verify Erdős #409 research archive
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 permissions:
