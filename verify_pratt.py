@@ -30,4 +30,49 @@ def verify_prime(
 
     if p == 2:
         if cert.get("base_case") is not True:
-            raise RuntimeError( ‰%¹Ù…±¥•ÉÑ¥™¥…Ñ”™½È€Èˆ¤(€€€•±Í”è(€€€€€€€™…Ñ½ÉÌ€ô•ÉĞ¹•Ğ ‰Á}µ¥¹ÕÍ|Å}™…Ñ½É¥é…Ñ¥½¸ˆ¤(€€€€€€€¥˜¹½Ğ¥Í¥¹ÍÑ…¹”¡™…Ñ½ÉÌ°±¥ÍĞ¤½È¹½Ğ™…Ñ½ÉÌè(€€€€€€€€€€€É…¥Í”IÕ¹Ñ¥µ•ÉÉ½È¡˜‰5¥ÍÍ¥¹œÀ´Ä™…Ñ½É¥é…Ñ¥½¸™½ÈíÁôˆ¤((€€€€€€€ÁÉ½‘ÕĞ€ô€Ä(€€€€€€€‘¥ÍÑ¥¹Ğè±¥ÍÑm¥¹Ñt€ômt(€€€€€€€™½ÈÄ°•áÁ½¹•¹Ğ¥¸™…Ñ½ÉÌè(€€€€€€€€€€€Ù•É¥™å}ÁÉ¥µ”¡Ä°•ÉÑÌ°Ù•É¥™¥•°…Ñ¥Ù”¤(€€€€€€€€€€€ÁÉ½‘ÕĞ€¨ôÄ¨©•áÁ½¹•¹Ğ(€€€€€€€€€€€‘¥ÍÑ¥¹Ğ¹…ÁÁ•¹¡Ä¤((€€€€€€€¥˜ÁÉ½‘ÕĞ€„ôÀ€´€Äè(€€€€€€€€€€€É…¥Í”IÕ¹Ñ¥µ•ÉÉ½È¡˜‰%¹½ÉÉ•ĞÀ´Ä™…Ñ½É¥é…Ñ¥½¸™½ÈíÁôˆ¤((€€€€€€€„€ô•ÉĞ¹•Ğ ‰İ¥Ñ¹•ÍÌˆ¤(€€€€€€€¥˜¹½Ğ¥Í¥¹ÍÑ…¹”¡„°¥¹Ğ¤½È¹½Ğ€ Ä€ğ„€ğÀ¤è(€€€€€€€€€€€É…¥Í”IÕ¹Ñ¥µ•ÉÉ½È¡˜‰%¹Ù…±¥İ¥Ñ¹•ÍÌ™½ÈíÁôˆ¤(€€€€€€€¥˜Á½Ü¡„°À€´€Ä°À¤€„ô€Äè(€€€€€€€€€€€É…¥Í”IÕ¹Ñ¥µ•ÉÉ½È¡˜‰•Éµ…Ğ½¹‘¥Ñ¥½¸™…¥±•™½ÈíÁôˆ¤(€€€€€€€™½ÈÄ¥¸‘¥ÍÑ¥¹Ğè(€€€€€€€€€€€¥˜µ…Ñ ¹¡Á½Ü¡„°€¡À€´€Ä¤€¼¼Ä°À¤€´€Ä°À¤€„ô€Äè(€€€€€€€€€€€€€€€É…¥Í”IÕ¹Ñ¥µ•ÉÉ½È¡˜‰1Õ…Ì½¹‘¥Ñ¥½¸™…¥±•™½ÈÀõíÁô°ÄõíÅôˆ¤((€€€…Ñ¥Ù”¹É•µ½Ù”¡À¤(€€€Ù•É¥™¥•¹…‘¡À¤(()‘•˜µ…¥¸ ¤€´ø9½¹”è(€€€İ¥Ñ é¥À¹½Á•¸¡AQ °€‰ÉĞˆ°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤…Ì¡…¹‘±”è(€€€€€€€‘…Ñ„€ô©Í½¸¹±½…¡¡…¹‘±”¤(€€€•ÉÑÌ€ô‘…Ñ…l‰•ÉÑ¥™¥…Ñ•Ì‰t(€€€Ù•É¥™¥•èÍ•Ñm¥¹Ñt€ôÍ•Ğ ¤((€€€™½È­•ä¥¸Í½ÉÑ•¡•ÉÑÌ°­•äõ¥¹Ğ¤è(€€€€€€€Ù•É¥™å}ÁÉ¥µ”¡¥¹Ğ¡­•ä¤°•ÉÑÌ°Ù•É¥™¥•°Í•Ğ ¤¤((€€€¥˜±•¸¡Ù•É¥™¥•¤€„ô‘…Ñ…l‰•ÉÑ¥™¥…Ñ•}½Õ¹Ğ‰tè(€€€€€€€É…¥Í”IÕ¹Ñ¥µ•ÉÉ½È ‰•ÉÑ¥™¥…Ñ”µ½Õ¹Ğµ¥Íµ…Ñ ˆ¤((€€€ÁÉ¥¹Ğ¡˜‰YI%%èí±•¸¡Ù•É¥™¥•¥ôÉ•ÕÉÍ¥Ù”ÁÉ¥µ”•ÉÑ¥™¥…Ñ•Ì¸ˆ¤(()¥˜}}¹…µ•}|€ôô€‰}}µ…¥¹}|ˆè(€€€µ…¥¸ ¤
+            raise RuntimeError("Invalid certificate for 2")
+    else:
+        factors = cert.get("p_minus_1_factorization")
+        if not isinstance(factors, list) or not factors:
+            raise RuntimeError(f"Missing p-1 factorization for {p}")
+
+        product = 1
+        distinct: list[int] = []
+        for q, exponent in factors:
+            verify_prime(q, certs, verified, active)
+            product *= q**exponent
+            distinct.append(q)
+
+        if product != p - 1:
+            raise RuntimeError(f"Incorrect p-1 factorization for {p}")
+
+        a = cert.get("witness")
+        if not isinstance(a, int) or not (1 < a < p):
+            raise RuntimeError(f"Invalid witness for {p}")
+        if pow(a, p - 1, p) != 1:
+            raise RuntimeError(f"Fermat condition failed for {p}")
+        for q in distinct:
+            if math.gcd(pow(a, (p - 1) // q, p) - 1, p) != 1:
+                raise RuntimeError(f"Lucas condition failed for p={p}, q={q}")
+
+    active.remove(p)
+    verified.add(p)
+
+
+def main() -> None:
+    with gzip.open(PATH, "rt", encoding="utf-8") as handle:
+        data = json.load(handle)
+    certs = data["certificates"]
+    verified: set[int] = set()
+
+    for key in sorted(certs, key=int):
+        verify_prime(int(key), certs, verified, set())
+
+    if len(verified) != data["certificate_count"]:
+        raise RuntimeError("Certificate-count mismatch")
+
+    print(f"VERIFIED: {len(verified)} recursive prime certificates.")
+
+
+if __name__ == "__main__":
+    main()
