@@ -1,0 +1,34 @@
+{
+  "claim": {
+    "start": 6668696999,
+    "steps": 71,
+    "terminal_prime": 9500401
+  },
+  "inverse_tree_level_counts": {
+    "68": 1,
+    "69": 10,
+    "70": 42,
+    "71": 10,
+    "72": 0
+  },
+  "prime_certificates": 222,
+  "record_chain": [
+    {
+      "F": 68,
+      "witness": 6148888817
+    },
+    {
+      "F": 69,
+      "witness": 6152490577
+    },
+    {
+      "F": 70,
+      "witness": 6665198137
+    },
+    {
+      "F": 71,
+      "witness": 6668696999
+    }
+  ],
+  "trajectory_nodes": 72
+}
