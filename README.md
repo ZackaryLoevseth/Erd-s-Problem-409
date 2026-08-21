@@ -1,8 +1,8 @@
-# Erdős Problem #409 — research archive and certified record computations
+# Erdős Problem #409 — certified computations through F=104
 
 [![Verify research packet](https://github.com/ZackaryLoevseth/Erd-s-Problem-409/actions/workflows/verify.yml/badge.svg)](https://github.com/ZackaryLoevseth/Erd-s-Problem-409/actions/workflows/verify.yml)
 
-> **Status:** Erdős Problem #409 remains open. This repository contains a reproducible computational research record, including certified stopping-time witnesses through $F=71$, an exact rooted inverse-totient tree, search protocols, and claim boundaries. It does **not** claim to solve the full problem.
+> **Status:** Erdős Problem #409 remains open. This repository contains reproducible pointwise certificates through $F=104$, the earlier certified $F=68$–$71$ chain, an exact rooted inverse-totient tree for that earlier chain, search protocols, and explicit claim boundaries. It does **not** claim to solve the full problem or establish record priority.
 
 ## The problem
 
@@ -22,7 +22,35 @@ This repository is organized around the complete problem, not around a single wi
 
 ## Current certified research state
 
-The strongest trajectory certificate presently included is
+The strongest pointwise trajectory certificate presently included is
+
+$$
+\boxed{F(400{,}000{,}287{,}233{,}629)=104}.
+$$
+
+The trajectory contains 105 nodes and terminates at the prime
+
+$$
+27{,}515{,}203{,}921.
+$$
+
+Every composite-node factorization, Euler totient, and transition was freshly
+recomputed by the SymPy evaluator, a dependency-free trial-division evaluator,
+and a third method-distinct standard-library audit using deterministic
+Pollard–Rho factorization and deterministic 64-bit Miller–Rabin primality
+testing. The third audit also rejected all six required mutation categories.
+
+The certificate establishes the scoped result
+
+$$
+\boxed{\sup_{n\ge1}F(n)\ge104}.
+$$
+
+It does not establish that 104 is a world record or global maximum.
+
+### Preserved F=68–71 chain
+
+The earlier certified trajectory is
 
 $$
 \boxed{F(6{,}668{,}696{,}999)=71}.
@@ -82,12 +110,23 @@ python verify_inverse_tree.py
 python independent_check.py
 ```
 
+Verify the public-safe F=104 packet and fresh method-distinct audit:
+
+```bash
+python -m pip install -r certificates/F104/requirements.txt
+(cd certificates/F104 && PYTHONDONTWRITEBYTECODE=1 bash run_all.sh)
+PYTHONDONTWRITEBYTECODE=1 python validation/f104_fresh_method_distinct.py \
+  certificates/F104
+```
+
 Expected core outputs include:
 
 ```text
 VERIFIED: F(6668696999)=71; terminal prime=9500401; 72 nodes; 222 prime certificates used.
 VERIFIED inverse tree: F68=1, F69=10, F70=42, F71=10, F72=0; 62 exact parent-child edges.
 71 9500401
+104 27515203921 3faf8aa1b74ffa39d8e72b45b0a57ceffbc631a958f7a8bed758d3caaa745394
+PASS_F104_FRESH_REPLAY_AND_6_OF_6_MUTATIONS_REJECTED
 ```
 
 A compact independent SymPy check is also included:
@@ -120,6 +159,9 @@ Every push and pull request runs all checks in GitHub Actions.
 - [`data/inverse_tree_nodes.csv`](data/inverse_tree_nodes.csv) and [`data/inverse_tree_edges.csv`](data/inverse_tree_edges.csv) — flat rooted-tree tables.
 - [`data/record_chain.csv`](data/record_chain.csv) — the certified F=68 through F=71 progression.
 - [`data/summary.json`](data/summary.json) — concise packet summary.
+- [`certificates/F104/`](certificates/F104/) — public-safe 105-node F=104
+  pointwise certificate, two original evaluators, terminal-primality evidence,
+  exact manifest, and narrowed claim ledger.
 
 ### Verification and reproduction
 
@@ -128,6 +170,8 @@ Every push and pull request runs all checks in GitHub Actions.
 - [`independent_check.py`](independent_check.py) — factor-from-scratch trajectory recomputation.
 - [`verify.py`](verify.py) — minimal SymPy implementation.
 - [`tools/generate_packet.py`](tools/generate_packet.py) — deterministic data and certificate generator.
+- [`validation/f104_fresh_method_distinct.py`](validation/f104_fresh_method_distinct.py)
+  — fresh Pollard–Rho/Miller–Rabin audit and six-category mutation harness.
 - [`SHA256SUMS`](SHA256SUMS) — integrity manifest.
 
 ### Historical record
@@ -140,12 +184,12 @@ Every push and pull request runs all checks in GitHub Actions.
 The certificate establishes the explicit lower bound
 
 $$
-\sup_{n\ge1}F(n)\ge71.
+\sup_{n\ge1}F(n)\ge104.
 $$
 
-It also provides an exactly enumerated local inverse tree rooted at one previously certified witness. These are finite computational results relevant to the stopping-time part of Problem #409.
+The repository separately preserves an exactly enumerated local inverse tree rooted at the earlier F=68 witness. The F=104 public release promotes only the pointwise trajectory certificate; no new inverse-tree completeness claim is imported from private discovery material.
 
-They do not establish a general upper bound, a global maximum, the nonexistence of $F\ge72$, infinitude of any terminal-prime basin, or a density theorem. The public packet also makes no claim that $71$ is the current world record without a separate, current literature comparison.
+These finite certificates do not establish a general upper bound, a global maximum, the nonexistence of $F\ge105$, infinitude of any terminal-prime basin, inverse-tree completeness beyond the stated earlier rooted tree, or a density theorem. The repository makes no world-record or absolute-priority claim.
 
 ## Authorship and AI assistance
 
@@ -160,7 +204,7 @@ They do not establish a general upper bound, a global maximum, the nonexistence 
 ## Suggested citation
 
 ```text
-Zackary Loevseth, “Erdős Problem #409 — research archive and
-certified record computations through F=71,” version 2.0.0, 2026.
+Zackary Loevseth, “Erdős Problem #409 — certified computations
+through F=104,” version 3.0.0-f104, 2026.
 https://github.com/ZackaryLoevseth/Erd-s-Problem-409
 ```

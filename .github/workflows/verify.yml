@@ -30,3 +30,10 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Minimal independent SymPy trajectory
         run: python verify.py
+      - name: Verify F=104 public packet
+        run: |
+          cd certificates/F104
+          PYTHONDONTWRITEBYTECODE=1 bash run_all.sh
+      - name: Fresh method-distinct F=104 replay and mutations
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python validation/f104_fresh_method_distinct.py certificates/F104

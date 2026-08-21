@@ -1,0 +1,23 @@
+{
+  "implementation": "fresh standard-library deterministic Pollard--Rho factorization plus deterministic 64-bit Miller--Rabin",
+  "mutations": {
+    "alter_factor": "REJECTED: AuditFailure: listed factor is not prime: 285783281",
+    "alter_prime": "REJECTED: AuditFailure: listed factor is not prime: 27515203919",
+    "alter_trajectory_value": "REJECTED: AuditFailure: next row mismatch at 49",
+    "change_claimed_stopping_time": "REJECTED: AuditFailure: claimed stopping time is not 104",
+    "change_terminal_value": "REJECTED: AuditFailure: next row mismatch at 103",
+    "remove_node": "REJECTED: AuditFailure: trajectory must contain 105 nodes"
+  },
+  "replay": {
+    "F": 104,
+    "composite_nodes_checked": 104,
+    "factor_occurrences_checked": 310,
+    "status": "PASS_FRESH_METHOD_DISTINCT_REPLAY",
+    "terminal_prime": 27515203921,
+    "terminal_trial_division_primes_checked": 15165,
+    "trajectory_nodes": 105,
+    "trajectory_sha256": "3faf8aa1b74ffa39d8e72b45b0a57ceffbc631a958f7a8bed758d3caaa745394",
+    "witness": 400000287233629
+  },
+  "status": "PASS_F104_FRESH_REPLAY_AND_6_OF_6_MUTATIONS_REJECTED"
+}

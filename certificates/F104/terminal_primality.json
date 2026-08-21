@@ -1,0 +1,8 @@
+{
+  "floor_sqrt_n": 165877,
+  "largest_prime_tested": 165877,
+  "method": "deterministic trial division by every prime p <= floor(sqrt(n))",
+  "n": 27515203921,
+  "number_of_primes_tested": 15165,
+  "result": "prime"
+}

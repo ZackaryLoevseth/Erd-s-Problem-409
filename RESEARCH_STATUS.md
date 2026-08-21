@@ -6,17 +6,35 @@ This file separates exact results from local exhaustion statements, historical c
 
 Define $T(n)=\varphi(n)+1$, and let $F(n)$ be the first index at which the iterated trajectory reaches a prime.
 
-The package-free certificate verifies
+The new public-safe pointwise packet verifies
+
+$$
+F(400{,}000{,}287{,}233{,}629)=104
+$$
+
+with terminal prime $27{,}515{,}203{,}921$. Consequently,
+
+$$
+\sup_{n\ge1}F(n)\ge104.
+$$
+
+Its proof objects contain all 105 trajectory nodes, all 104 composite-node
+factorizations, exact totients and transitions, terminal-primality evidence,
+two original evaluators, and a fresh third method-distinct evaluator. The
+fresh audit recomputed 104 factorizations with 310 prime-factor occurrences,
+tested all 15,165 primes through the square root of the terminal value, and
+rejected six of six semantic mutation categories.
+
+The earlier package-free certificate verifies
 
 $$
 F(6{,}668{,}696{,}999)=71
 $$
 
-with terminal prime $9{,}500{,}401$. Consequently,
+with terminal prime $9{,}500{,}401$.
 
-$$
-\sup_{n\ge1}F(n)\ge71.
-$$
+This earlier certificate independently gives the weaker bound
+$\sup_{n\ge1}F(n)\ge71$ and remains preserved for provenance.
 
 The same trajectory contains the nested certified records
 
@@ -63,11 +81,12 @@ The empty rooted $F=72$ level is not a global nonexistence theorem. A different 
 The repository does not establish:
 
 - an upper bound sharp enough to resolve the first part of Problem #409;
-- that $71$ is the global maximum of $F$;
-- that no $F\ge72$ witness exists;
-- that $71$ is the current world record at every later date;
+- that $104$ is the global maximum of $F$;
+- that no $F\ge105$ witness exists;
+- that $104$ is a world record or has absolute historical priority;
 - that infinitely many starting values reach any fixed prime;
 - the density of any terminal-prime basin;
+- any new inverse-tree completeness claim for the F=104 witness;
 - a resolution of Erdős Problem #409.
 
 ## D. Historical status
@@ -75,3 +94,7 @@ The repository does not establish:
 The $F=68$ witness was publicly recorded on July 22, 2026. The original public repository was later renamed and repurposed for Problem #64. The historical hashes and the accessible old Git tree are preserved under [`archive/`](archive/).
 
 The $F=69,70,71$ continuation was reconstructed and independently certified on August 5–6, 2026 from the exact inverse-totient structure above. It has not been represented here as peer-reviewed or externally human-verified.
+
+The F=104 pointwise packet passed a new public-release audit on August 21,
+2026. This publication makes no record-priority claim and is not external
+specialist review.

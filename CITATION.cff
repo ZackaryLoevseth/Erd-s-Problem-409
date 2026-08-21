@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite this repository for the certified record chain and inverse-totient research packet."
-title: "Erdős Problem #409: certified record computations through F=71"
+message: "Please cite this repository for the certified F=104 pointwise witness without claiming record priority."
+title: "Erdős Problem #409: certified computations through F=104"
 type: software
-version: 2.0.0
-date-released: 2026-08-06
+version: 3.0.0-f104
+date-released: 2026-08-21
 authors:
   - family-names: "Loevseth"
     given-names: "Zackary"
@@ -13,10 +13,10 @@ url: "https://github.com/ZackaryLoevseth/Erd-s-Problem-409"
 license: MIT
 abstract: >-
   Reproducible computational research archive for Erdős Problem #409,
-  including a complete certificate for F(6,668,696,999)=71, the nested
-  F=68 through F=71 record chain, 222 recursive prime certificates,
-  and an independently verified exact inverse-totient tree rooted at
-  the earlier F=68 witness.
+  including a complete 105-node pointwise certificate for
+  F(400,000,287,233,629)=104, three evaluator paths, six mutation controls,
+  the preserved F=68 through F=71 chain, and the separately scoped rooted
+  inverse-totient tree for the earlier chain. No record priority is claimed.
 keywords:
   - Erdős Problem 409
   - Euler totient

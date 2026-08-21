@@ -1,0 +1,19 @@
+{
+  "F": 104,
+  "all_checks_pass": true,
+  "checks": {
+    "all_factorizations_remultiplied_by_builder": true,
+    "all_totients_recomputed_exactly_by_builder": true,
+    "all_transitions_checked_by_builder": true,
+    "first_prime_occurs_at_expected_index": true,
+    "independent_trial_division_evaluator_included": true,
+    "sympy_forward_evaluator_included": true,
+    "terminal_primality_checked_by_trial_division": true,
+    "trajectory_csv_checked_by_both_evaluators": true
+  },
+  "scope": "Certifies the pointwise claim F(400000287233629)=104. Does not establish novelty or solve Erd\u0151s Problem #409 in full.",
+  "terminal_prime": 27515203921,
+  "trajectory_nodes": 105,
+  "trajectory_sha256": "3faf8aa1b74ffa39d8e72b45b0a57ceffbc631a958f7a8bed758d3caaa745394",
+  "witness": 400000287233629
+}
