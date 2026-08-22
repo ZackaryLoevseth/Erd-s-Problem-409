@@ -1,8 +1,8 @@
-# Erdős Problem #409 — certified computations through F=104
+# Erdős Problem #409 — pointwise certificate F(400000287233629)=104
 
 [![Verify research packet](https://github.com/ZackaryLoevseth/Erd-s-Problem-409/actions/workflows/verify.yml/badge.svg)](https://github.com/ZackaryLoevseth/Erd-s-Problem-409/actions/workflows/verify.yml)
 
-> **Status:** Erdős Problem #409 remains open. This repository contains reproducible pointwise certificates through $F=104$, the earlier certified $F=68$–$71$ chain, an exact rooted inverse-totient tree for that earlier chain, search protocols, and explicit claim boundaries. It does **not** claim to solve the full problem or establish record priority.
+> **Status:** Erdős Problem #409 remains open. The current release certifies exactly $F(400000287233629)=104$, hence $\sup_n F(n)\ge104$. The repository separately preserves the earlier certified $F=68$–$71$ chain and an exact rooted inverse-totient tree only for that earlier chain. It does **not** claim world-record priority, unboundedness, global maximality, basin infinitude, density, inverse-tree completeness for the F=104 witness, or a solution.
 
 ## The problem
 
@@ -204,7 +204,7 @@ These finite certificates do not establish a general upper bound, a global maxim
 ## Suggested citation
 
 ```text
-Zackary Loevseth, “Erdős Problem #409 — certified computations
-through F=104,” version 3.0.0-f104, 2026.
+Zackary Loevseth, “Erdős Problem #409 — pointwise certificate
+F(400000287233629)=104,” version 3.0.0-f104, 2026.
 https://github.com/ZackaryLoevseth/Erd-s-Problem-409
 ```
